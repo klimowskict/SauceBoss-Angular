@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAUA,AAAA,UAAU,CAAC;EAJP,MAAM,EAAE,QAAQ;EAChB,OAAO,EAIc,IAAI,CAAC,IAAI;EAC9B,UAAU,EAVK,OAAe;EAW9B,KAAK,EAAC,WAAW;EACjB,UAAU,EAAE,KAAK;CACpB",
+    "sources": [
+        "upper-bar.component.scss"
+    ],
+    "names": [],
+    "file": "upper-bar.component.css"
+}

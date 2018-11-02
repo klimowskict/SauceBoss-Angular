@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Dish } from './../shared/dish';
+import { DishService } from '../services/dish.service';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  dishes: Dish[];
+  item: Dish;
 
-  ngOnInit() {
+  onSelect(dish: Dish) {
+    this.item = dish;
   }
 
-}
+  constructor(private dishService: DishService ) { }
+
+  ngOnInit() {
+    this.dishes = this.dishService.returnDishes();
+  }
+
+          }
+

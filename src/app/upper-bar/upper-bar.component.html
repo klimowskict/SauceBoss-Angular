@@ -1,11 +1,15 @@
 <mat-toolbar color="warn">
   <span><img src="/assets/images/logo.jpg" height=30 width=41></span>
   <a mat-button routerLink ='/home'><span class="fa fa-home fa-lg"></span> Home</a>
-  <a mat-button routerLink='/menu'><span class="fa fa-list fa-lg"></span> Menu</a>
-  <a mat-button routerLink='/deals'><span class="fa fa fa-lg"></span> Deals</a>
-  <a mat-button routerLink='/aboutus'><span class="fa fa-info fa-lg"></span> About us</a>
-  <a mat-button routerLink='/contactus'><span class="fa fa-address-card fa-lg"></span> Contact us</a>
+  <a mat-button routerLink='/menu'><span class="fa fa-list fa-lg"></span> Become a Member</a>
+  <a mat-button routerLink='/deals'><span class="fa fa-align-justify fa-lg"></span> Products</a>
+  <a mat-button routerLink='/aboutus'><span class="fa fa-info fa-lg"></span> Recipes</a>
+  <a mat-button routerLink='/contactus'><span class="fa fa-search fa-lg"></span> Search</a>
   <span class="flex-spacer"></span>
+  <a mat-button>
+    <span class="fa fa-shopping-cart fa-lg"></span>
+    Shopping Cart
+</a>
   <a mat-button (click)="openLoginForm()">
       <span class="fa fa-sign-in fa-lg"></span>
       Login

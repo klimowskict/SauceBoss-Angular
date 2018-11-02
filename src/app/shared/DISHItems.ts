@@ -3,16 +3,16 @@ import { Dish } from './dish';
 export const DISHItems: Dish[] = [
     {
       id: 1,
-      name: 'Tandoori Pizza',
-      image: '/assets/images/Tandoori-BBQ-chicken.jpeg',
-      category: 'main',
-      label: 'Hot',
-      price: '8.99',
-      description: 'Spicy Barbeque Sauce, Mozzarella Cheese, Red Onions & Tandoori Barbeque Chicken',
+      name: 'Green Sauce - Mild',
+      image: '/assets/images/GreenSauce.jpg',
+      category: 'sauce',
+      label: 'Mild',
+      price: '20.99',
+      description: 'A mild green sauce made from Tomatillo chilis.',
       reviews: [
         {
           rating: 5,
-          comment: 'I loved this pizza, it is the best in town',
+          comment: 'I loved this sauce, it is the best in town',
           author: 'David Lee',
           date: '2017-01-16T15:12:28.556094Z'
         },
@@ -24,19 +24,19 @@ export const DISHItems: Dish[] = [
         },
         {
           rating: 5,
-          comment: 'Too much Tandoori, but I still loved it',
+          comment: 'Too much Tomatillo, but I still loved it',
           author: 'Mike Tomas',
           date: '2018-10-05T17:12:28.556094Z'
         },
         {
           rating: 3,
-          comment: 'Ok Pizza!',
+          comment: 'Ok Sauce!',
           author: 'Anita Thomas',
           date: '2017-11-13T23:03:28.556094Z'
         },
         {
           rating: 1,
-          comment: 'Bad Pizza!',
+          comment: 'Bad Sauce!',
           author: 'Anonymous',
           date: '2017-09-02T20:20:28.556094Z'
         }
@@ -44,16 +44,16 @@ export const DISHItems: Dish[] = [
     },
    {
       id: 2,
-      name: 'Curry Veggie Delight',
-      image: '/assets/images/Curry-veggie-delight.jpeg',
-      category: 'main',
-      label: 'Hot',
-      price: '9.99',
-      description: 'Organic Spicy Veggie Curry will be sure to excite your tastebuds!',
+      name: 'Sauce Multi Pack',
+      image: '/assets/images/MultiSauce.jpg',
+      category: 'sauce',
+      label: 'Mix',
+      price: '30.99',
+      description: 'A mixed pack of our msot popular hot sauces.',
       reviews: [
         {
           rating: 4,
-          comment: 'This curry is delicous!',
+          comment: 'This sauce is delicous!',
           author: 'Frank Lee',
           date: '2016-05-07T02:15:28.556094Z'
         },
@@ -73,22 +73,22 @@ export const DISHItems: Dish[] = [
     },
    {
       id: 3,
-      name: 'Chicken Wings',
-      image: '/assets/images/chicken-wings-alla-spina.jpg',
-      category: 'appetizer',
-      label: 'New',
-      price: '6.99',
-      description: 'Chicken Wings with Tandoori sauce flavor',
+      name: 'Sauce Recipes',
+      image: '/assets/images/RecipeSauce.jpg',
+      category: 'recipe',
+      label: 'Recipe',
+      price: '10.99',
+      description: 'A book containing our most popular hot sauce recipes!',
       reviews: [
         {
           rating: 1,
-          comment: 'Worst chicken wing I have ever had!',
+          comment: 'Worst recipe book I have ever had!',
           author: 'Lee K',
           date: '2016-08-08T01:15:28.556094Z'
         },
         {
           rating: 5,
-          comment: 'Delicious!',
+          comment: 'Delicious recipes!',
           author: 'Michael Lee',
           date: '2016-09-05T19:47:28.556094Z'
         },
@@ -108,16 +108,16 @@ export const DISHItems: Dish[] = [
     },
    {
       id: 4,
-      name: 'Mango Lassi',
-      image: '/assets/images/mango-lassi.jpg',
-      category: 'drinks',
-      label: 'cold',
-      price: '3.99',
-      description: 'A blend of yogurt, water, spices and mango',
+      name: 'Spicy Sauce',
+      image: '/assets/images/SpicySauce.jpg',
+      category: 'sauce',
+      label: 'Spicy',
+      price: '14.99',
+      description: 'Our spiciest sauce!',
       reviews: [
         {
           rating: 5,
-          comment: 'Best drink ever!',
+          comment: 'Best sauceever!',
           author: 'Lee K',
           date: '2016-07-26T04:57:28.556094Z'
         },
@@ -129,7 +129,7 @@ export const DISHItems: Dish[] = [
         },
         {
           rating: 4,
-          comment: 'Mango is my favorite!',
+          comment: 'Spicy is my favorite!',
           author: 'Nicholas Pocs',
           date: '2016-01-03T10:57:28.556094Z'
         }

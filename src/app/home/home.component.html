@@ -3,14 +3,14 @@
      fxLayoutGap="10px">
      <div fxFlex>
         <div>
-          <h3>Menu</h3>
+          <h3>Home Page - Sample of our wares:</h3>
           <hr>
         </div>
       </div>
 
  <div fxFlex>
   <mat-grid-list cols="4" rowHeight="200px">
-    <mat-grid-tile *ngFor="let dish of dishes" [routerLink]="['/itemdetail', dish.id]">
+    <mat-grid-tile *ngFor="let dish of dishes | slice:0:4" [routerLink]="['/itemdetail', dish.id]">
       <img height="200px" width="200px" src={{dish.image}} alt={{dish.name}}>
       <mat-grid-tile-footer>
         <h1 md-line> {{dish.name | uppercase}} </h1>

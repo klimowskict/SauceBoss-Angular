@@ -6,6 +6,10 @@ import { AboutusComponent } from '../aboutus/aboutus.component';
 import { ContactUsComponent } from '../contactus/contactus.component';
 import { HomeComponent } from '../home/home.component';
 import { DealsComponent } from '../deals/deals.component';
+import { RecipesComponent } from '../recipes/recipes.component';
+import { RecipedetailComponent } from '../recipedetail/recipedetail.component';
+import { TermsComponent } from '../terms/terms.component';
+import { CareersComponent } from '../careers/careers.component';
 
 export const appRoutes: Routes = [
   { path: 'home',  component: HomeComponent },
@@ -14,5 +18,9 @@ export const appRoutes: Routes = [
   { path: 'aboutus',     component: AboutusComponent },
   { path: 'contactus',     component: ContactUsComponent },
   { path: 'itemdetail/:id', component: ItemdetailComponent },
+  { path: 'recipes', component: RecipesComponent },
+  { path: 'recipedetail/:id', component: RecipedetailComponent },
+  { path: 'terms', component: TermsComponent },
+  { path: 'careers', component: CareersComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];

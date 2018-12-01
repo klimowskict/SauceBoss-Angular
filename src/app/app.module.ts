@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { DishService } from './services/dish.service';
+import { RecipeService } from './services/recipes.service';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
@@ -33,6 +34,10 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactUsComponent } from './contactus/contactus.component';
 import { DealsComponent } from './deals/deals.component';
 import { LoginComponent } from './login/login.component';
+import { RecipesComponent } from './recipes/recipes.component';
+import { RecipedetailComponent } from './recipedetail/recipedetail.component';
+import { TermsComponent } from './terms/terms.component';
+import { CareersComponent } from './careers/careers.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +50,11 @@ import { LoginComponent } from './login/login.component';
     AboutusComponent,
     ContactUsComponent,
     DealsComponent,
-    LoginComponent
+    LoginComponent,
+    RecipesComponent,
+    RecipedetailComponent,
+    TermsComponent,
+    CareersComponent
   ],
   imports: [
     BrowserModule,
@@ -66,7 +75,7 @@ import { LoginComponent } from './login/login.component';
     MatInputModule,
     MatSelectModule
   ],
-  providers: [DishService],
+  providers: [DishService, RecipeService],
   bootstrap: [AppComponent],
   entryComponents: [
     LoginComponent

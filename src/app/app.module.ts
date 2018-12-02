@@ -16,7 +16,8 @@ import {
   MatFormFieldModule,
   MatCheckboxModule,
   MatInputModule,
-  MatSelectModule
+  MatSelectModule,
+  MatProgressSpinnerModule
 } from '@angular/material';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -38,6 +39,8 @@ import { RecipesComponent } from './recipes/recipes.component';
 import { RecipedetailComponent } from './recipedetail/recipedetail.component';
 import { TermsComponent } from './terms/terms.component';
 import { CareersComponent } from './careers/careers.component';
+import { appURL } from './shared/appURL';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -73,9 +76,13 @@ import { CareersComponent } from './careers/careers.component';
     MatFormFieldModule,
     MatCheckboxModule,
     MatInputModule,
-    MatSelectModule
+    MatSelectModule,
+    MatProgressSpinnerModule,
+    HttpClientModule
   ],
-  providers: [DishService, RecipeService],
+  providers: [DishService, RecipeService,
+    {provide: 'AppURL', useValue: appURL}
+  ],
   bootstrap: [AppComponent],
   entryComponents: [
     LoginComponent

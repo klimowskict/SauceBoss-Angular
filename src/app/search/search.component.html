@@ -1,0 +1,25 @@
+<div class="container"
+     fxLayout="column"
+     fxLayoutGap="10px">
+
+<div fxFlex>
+  <div>
+    <h3>Please enter your search terms in the field below:</h3>
+    <hr>
+  </div>
+</div>
+
+<form novalidate #contactForm="ngForm" class="contact-form"
+  (ngSubmit)="onSubmit()">
+   <div class="container-form">
+      <mat-form-field class="name-width"
+        hintLabel="Max 100 characters">
+        <input matInput
+          placeholder="Please enter your search terms"
+          type="text"
+            name="nm"
+            required
+            maxlength="100"
+            >
+      </mat-form-field>
+</div>

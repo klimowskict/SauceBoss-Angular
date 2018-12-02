@@ -10,6 +10,7 @@ import { RecipesComponent } from '../recipes/recipes.component';
 import { RecipedetailComponent } from '../recipedetail/recipedetail.component';
 import { TermsComponent } from '../terms/terms.component';
 import { CareersComponent } from '../careers/careers.component';
+import { SearchComponent } from '../search/search.component';
 
 export const appRoutes: Routes = [
   { path: 'home',  component: HomeComponent },
@@ -22,5 +23,6 @@ export const appRoutes: Routes = [
   { path: 'recipedetail/:id', component: RecipedetailComponent },
   { path: 'terms', component: TermsComponent },
   { path: 'careers', component: CareersComponent },
+  { path: 'search', component: SearchComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];

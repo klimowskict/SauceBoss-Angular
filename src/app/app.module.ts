@@ -41,6 +41,7 @@ import { TermsComponent } from './terms/terms.component';
 import { CareersComponent } from './careers/careers.component';
 import { appURL } from './shared/appURL';
 import { HttpClientModule } from '@angular/common/http';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +58,8 @@ import { HttpClientModule } from '@angular/common/http';
     RecipesComponent,
     RecipedetailComponent,
     TermsComponent,
-    CareersComponent
+    CareersComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

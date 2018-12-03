@@ -11,6 +11,7 @@ import { RecipedetailComponent } from '../recipedetail/recipedetail.component';
 import { TermsComponent } from '../terms/terms.component';
 import { CareersComponent } from '../careers/careers.component';
 import { SearchComponent } from '../search/search.component';
+import { MessageusComponent } from '../messageus/messageus.component';
 
 export const appRoutes: Routes = [
   { path: 'home',  component: HomeComponent },
@@ -24,5 +25,6 @@ export const appRoutes: Routes = [
   { path: 'terms', component: TermsComponent },
   { path: 'careers', component: CareersComponent },
   { path: 'search', component: SearchComponent },
+  { path: 'messageus', component: MessageusComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' }
 ];

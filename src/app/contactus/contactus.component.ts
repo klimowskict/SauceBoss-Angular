@@ -21,6 +21,9 @@ export class ContactUsComponent implements OnInit {
       state: '',
       zipcode: ''
     };
+
+    hide = true;
+
     constructor() { }
 
     ngOnInit() {

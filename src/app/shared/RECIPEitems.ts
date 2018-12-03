@@ -77,7 +77,7 @@ export const RECIPEItems: Recipe[] = [
     image: '/assets/images/bloody.jpg',
     label: 'Drink',
     price: '6.99',
-    description: 'Chicken Wings with Tandoori sauce flavor',
+    description: 'A nice bloody mary to start your day',
     difficulty: 'Easy',
     reviews: [
       {
@@ -112,7 +112,7 @@ export const RECIPEItems: Recipe[] = [
     image: '/assets/images/pizza.jpg',
     label: 'Entree',
     price: '3.99',
-    description: 'A blend of yogurt, water, spices and mango',
+    description: 'A spicy pizza with hot sauce as the base',
     difficulty: 'Hard',
     reviews: [
       {

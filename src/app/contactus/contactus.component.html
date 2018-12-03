@@ -12,6 +12,26 @@
 <form novalidate #contactForm="ngForm" class="contact-form"
   (ngSubmit)="onSubmit()">
    <div class="container-form">
+
+      <mat-form-field
+      hintLabel="Max 100 characters">
+      <input matInput
+        placeholder="Please enter your desired username"
+        type="text"
+          name="nm"
+          required
+          maxlength="100"
+          >
+    </mat-form-field>
+
+    <mat-form-field
+      hintLabel="Max 100 characters">
+      <input matInput
+        placeholder="Please enter your desired password"
+        [type]="hide ? 'password' : 'text'">
+  <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+    </mat-form-field>
+
       <mat-form-field class="name-width"
         hintLabel="Max 20 characters">
         <input matInput
@@ -81,16 +101,16 @@
             </mat-error>
       </mat-form-field>
 
-      <mat-form-field>
-
-        <mat-select placeholder="Please select State">
-          <mat-option *ngFor="let state of states"
-              [value]="state.value">
-            {{ state.text }}
-          </mat-option>
-        </mat-select>
-
-    </mat-form-field>
+          <mat-form-field
+          hintLabel="Max 100 characters">
+          <input matInput
+            placeholder="Please enter your State"
+            type="text"
+              name="st"
+              required
+              maxlength="100"
+              >
+        </mat-form-field>
 
     <mat-form-field class="zipcode-width"
         hintLabel="Max 5 characters">
@@ -137,7 +157,6 @@
                 </div>
               </mat-error>
         </mat-form-field>
-    </div>
 
    <button mat-button type="reset">Clear</button>
    <button type="submit" mat-button
@@ -146,8 +165,8 @@
       >
       Submit
   </button>
-</form>
+  </div>
+ </form>
 <div>
   &nbsp;
-</div>
 </div>

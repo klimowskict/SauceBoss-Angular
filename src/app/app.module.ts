@@ -42,6 +42,7 @@ import { CareersComponent } from './careers/careers.component';
 import { appURL } from './shared/appURL';
 import { HttpClientModule } from '@angular/common/http';
 import { SearchComponent } from './search/search.component';
+import { MessageusComponent } from './messageus/messageus.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import { SearchComponent } from './search/search.component';
     RecipedetailComponent,
     TermsComponent,
     CareersComponent,
-    SearchComponent
+    SearchComponent,
+    MessageusComponent
   ],
   imports: [
     BrowserModule,
